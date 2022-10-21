@@ -1,6 +1,6 @@
 {
   "DatabaseSettings": {
-    "DBProvider": "mssql",
-    "ConnectionString": "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=fullStackHeroDb;Integrated Security=True;MultipleActiveResultSets=True"
+    "ConnectionString": "Host=ls-afbc0e08b7f8927321e96f1d39b5a4e1d8c37e2b.cuvxxtjyqtml.us-west-2.rds.amazonaws.com;Database=boilerPlate;Username=dbmainuser;Password=53nst$}yGz6ol6]99C8`+9xYp%S1!FjY;Include Error Detail=true",
+    "DBProvider": "postgresql"
   }
 }
