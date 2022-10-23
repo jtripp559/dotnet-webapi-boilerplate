@@ -4,22 +4,22 @@
     "RequireConfirmedAccount":true,
     "JwtSettings": {
       "key": "S0M3RAN0MS3CR3T!1!MAG1C!1!",
-      "tokenExpirationInMinutes": 60,
+      "tokenExpirationInMinutes": 120,
       "refreshTokenExpirationInDays": 7
     },
     "AzureAd": {
       "Instance": "https://login.microsoftonline.com/",
-      "Domain": "<Your Domain>.onmicrosoft.com",
+      "Domain": "swtie831gmail.onmicrosoft.com",
       "TenantId": "organizations",
-      "ClientId": "<Your ClientId of the AzureAd Server App Registration>",
+      "ClientId": "3fbdccf8-7b8b-4ef7-9580-e6756bfa6730",
       "Scopes": "access_as_user",
-      "RootIssuer": "https://sts.windows.net/<Your AzureAd TenantId>/"
+      "RootIssuer": "https://sts.windows.net/c6d3934a-bdc4-4bea-a4a8-8340981d2cc0/"
     },
     "Swagger": {
       "AuthorizationUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize",
       "TokenUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
-      "ApiScope": "api://<Your ClientId of the AzureAd Server App Registration>/access_as_user",
-      "OpenIdClientId": "<Your ClientId of the AzureAd Client App Registration>"
+      "ApiScope": "api://3fbdccf8-7b8b-4ef7-9580-e6756bfa6730/access_as_user",
+      "OpenIdClientId": "fde9d7a9-8f34-49df-a09d-9c92591120fb"
     }
   }
 }
