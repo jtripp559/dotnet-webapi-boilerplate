@@ -480,6 +480,34 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "generate-random-product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nSeed\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/products/generate-random",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"products",
+										"generate-random"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},

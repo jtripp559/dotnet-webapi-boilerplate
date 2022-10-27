@@ -62,4 +62,12 @@ public class ProductsController : VersionedApiController
         var result = await Mediator.Send(filter);
         return File(result, "application/octet-stream", "ProductExports");
     }
+
+    [HttpPost("generate-random")]
+    [MustHavePermission(FSHAction.Generate, FSHResource.Products)]
+    [OpenApiOperation("Generate a number of random Products.", "")]
+    public Task<string> GenerateRandomAsync(GenerateRandomProductRequest request)
+    {
+        return Mediator.Send(request);
+    }
     }

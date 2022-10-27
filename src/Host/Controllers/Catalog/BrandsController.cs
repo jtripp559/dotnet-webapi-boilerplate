@@ -4,6 +4,17 @@ namespace FSH.WebApi.Host.Controllers.Catalog;
 
 public class BrandsController : VersionedApiController
 {
+ /*     private readonly IBrandService _brandService;
+ //     public BrandsController(IBrandService brandService) => _brandService = brandService;
+ //     [HttpGet]
+ //     [MustHavePermission(FSHAction.View, FSHResource.Brands)]
+ //     [OpenApiOperation("Get a list of all brands.", "")]
+ //     public Task<List<BrandDto>> GetListAsync(CancellationToken cancellationToken)
+ //     {
+ //         return _brandService.GetListAsync(cancellationToken);
+ //         return Mediator.GetListAsync(cancellationToken);
+ //     } */
+
     [HttpPost("search")]
     [MustHavePermission(FSHAction.Search, FSHResource.Brands)]
     [OpenApiOperation("Search brands using available filters.", "")]
